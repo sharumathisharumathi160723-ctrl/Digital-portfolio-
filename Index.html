@@ -3,181 +3,182 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sharumathi B - Portfolio</title>
+  <title>S Varsha - Portfolio</title>
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background: linear-gradient(to right, #ff4b4b, #ff9999); /* 🔴 Gradient red background */
+      background: linear-gradient(to bottom right, #f8bbd0, #ba68c8); /* 🌸 pink-purple gradient */
       color: #333;
+      line-height: 1.6;
     }
     header {
+      background: linear-gradient(to right, #f8bbd0, #8e24aa);
+      color: #4a0072;
+      padding: 2rem 1rem;
       text-align: center;
-      padding: 40px 20px 20px;
-      color: #fff;
     }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-      color: #fff; /* White name */
-    }
-    header p {
-      font-size: 1.1rem;
-    }
+    header h1 { font-size: 2.5rem; font-weight: bold; }
+    header p { font-size: 1.2rem; color: #333; }
+
     nav {
-      text-align: center;
-      background: rgba(0, 0, 0, 0.3);
-      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
     }
     nav a {
       color: #fff;
-      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
+      padding: 0.3rem 0.6rem;
+      border-radius: 5px;
+      transition: 0.3s;
     }
-    nav a:hover {
-      text-decoration: underline;
-    }
+    nav a:hover { background: rgba(255,255,255,0.2); }
+
     section {
-      padding: 40px 20px;
+      padding: 2rem 1rem;
       max-width: 900px;
       margin: auto;
     }
-    h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #b30000;
-    }
-    .card, .education {
+    h2 { margin-bottom: 1rem; color: #6a1b9a; text-align: center; }
+
+    .card, ul li {
       background: #fff;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
-      margin-bottom: 20px;
-      text-align: center;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 1rem;
     }
-    .projects, .hobbies, .skills {
+    .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
     }
+    .card:hover { transform: translateY(-5px); transition: 0.3s; }
+
+    ul { list-style: none; padding: 0; }
+
     footer {
-      text-align: center;
-      padding: 20px;
-      background: rgba(0, 0, 0, 0.5);
+      background: #4a0072;
       color: #fff;
-      margin-top: 30px;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
     }
     button {
-      background: #b30000;
+      background: #8e24aa;
       color: #fff;
-      padding: 10px 15px;
       border: none;
+      padding: 0.7rem 1.2rem;
       border-radius: 5px;
       cursor: pointer;
-      margin-top: 10px;
+      transition: 0.3s;
     }
-    button:hover {
-      background: #800000;
-    }
+    button:hover { background: #6a1b9a; }
   </style>
 </head>
 <body>
+
+  <!-- ====== HEADER ====== -->
   <header>
-    <h1>Sharumathi B</h1>
+    <h1>S Varsha</h1>
     <p>BCA Department | MMES Women’s Arts and Science College, Melvisharam</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#hobbies">Hobbies</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
+  <!-- ====== ABOUT ====== -->
   <section id="about">
+    <h2>About Me</h2>
     <div class="card">
-      <h2>About Me</h2>
-      <p>Hello! I am <b>Sharumathi B</b>, pursuing <b>Bachelor of Computer Applications (BCA)</b> 
-      at <b>MMES Women’s Arts and Science College, Melvisharam</b>.  
-      I am passionate about technology, coding, and creating simple yet effective projects 
-      using HTML, CSS, and JavaScript.</p>
+      <p>Hello! I am <strong>S Varsha</strong>, a BCA student at MMES Women’s Arts and Science College, Melvisharam.  
+      I am passionate about programming, web development, and exploring new technologies.</p>
     </div>
   </section>
 
-  <section id="education">
-    <div class="card">
-      <h2>Education</h2>
-      <h3>Bachelor of Computer Applications (BCA)</h3>
-      <p>MMES Women’s Arts and Science College, Melvisharam</p>
-      <p>2022 – Present</p>
-    </div>
-  </section>
-
-  <section id="skills">
-    <h2>My Skills</h2>
-    <div class="skills">
-      <div class="card"><h3>HTML</h3></div>
-      <div class="card"><h3>CSS</h3></div>
-      <div class="card"><h3>JavaScript</h3></div>
-      <div class="card"><h3>Problem Solving</h3></div>
-      <div class="card"><h3>Communication</h3></div>
-    </div>
-  </section>
-
+  <!-- ====== PROJECTS ====== -->
   <section id="projects">
     <h2>My Projects</h2>
-    <div class="projects">
+    <div class="grid">
       <div class="card">
         <h3>Portfolio Website</h3>
-        <p>A personal portfolio website built using HTML, CSS, and JavaScript.</p>
-        <button onclick="showMessage('Portfolio Website')">View More</button>
+        <p>A personal portfolio created using HTML, CSS, and JavaScript.</p>
       </div>
       <div class="card">
-        <h3>Mini Calculator</h3>
-        <p>A simple JavaScript-based calculator for basic arithmetic operations.</p>
-        <button onclick="showMessage('Mini Calculator')">View More</button>
+        <h3>Student Management System</h3>
+        <p>A mini project to manage student records using database connectivity.</p>
       </div>
       <div class="card">
-        <h3>Student Database</h3>
-        <p>A project to store and display student information using HTML tables and JS.</p>
-        <button onclick="showMessage('Student Database')">View More</button>
+        <h3>Calculator App</h3>
+        <p>A simple calculator built with JavaScript.</p>
       </div>
     </div>
   </section>
 
+  <!-- ====== HOBBIES ====== -->
   <section id="hobbies">
     <h2>My Hobbies</h2>
-    <div class="hobbies">
-      <div class="card"><h3>Dancing</h3></div>
-      <div class="card"><h3>Reading</h3></div>
-      <div class="card"><h3>Writing</h3></div>
-      <div class="card"><h3>Singing</h3></div>
-      <div class="card"><h3>Travelling</h3></div>
+    <div class="grid">
+      <div class="card"><h3>💃 Dancing</h3><p>I love expressing myself through different dance forms.</p></div>
+      <div class="card"><h3>🍳 Cooking</h3><p>I enjoy experimenting with recipes and making delicious dishes.</p></div>
+      <div class="card"><h3>🎤 Singing</h3><p>Singing helps me relax and brings joy to my daily life.</p></div>
     </div>
   </section>
 
+  <!-- ====== SKILLS ====== -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <ul>
+      <li>💻 Web Development (HTML, CSS, JavaScript)</li>
+      <li>🖥️ Programming in C / C++ / Java</li>
+      <li>🗄️ Database Management (SQL, MySQL)</li>
+      <li>🎨 Creativity & Problem Solving</li>
+      <li>🤝 Teamwork and Communication</li>
+    </ul>
+  </section>
+
+  <!-- ====== EDUCATION ====== -->
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>BCA</strong> – MMES Women’s Arts and Science College, Melvisharam (2022–2025, Pursuing)</li>
+      <li><strong>12th Grade</strong> – Completed with Computer Science stream</li>
+      <li><strong>10th Grade</strong> – Successfully completed with good academic results</li>
+    </ul>
+  </section>
+
+  <!-- ====== CONTACT ====== -->
   <section id="contact">
+    <h2>Contact Me</h2>
     <div class="card">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-      <p>Phone: +91 9876543210</p>
-      <p>LinkedIn: <a href="#">linkedin.com/in/sharumathi</a></p>
+      <p>Email: <a href="mailto:varsha@example.com">varsha@example.com</a></p>
+      <button onclick="showMessage()">Say Hello 👋</button>
+      <p id="msg"></p>
     </div>
   </section>
 
+  <!-- ====== FOOTER ====== -->
   <footer>
-    <p>© 2025 Sharumathi B | Portfolio</p>
+    <p>&copy; 2025 S Varsha | All rights reserved.</p>
   </footer>
 
+  <!-- ====== JAVASCRIPT ====== -->
   <script>
-    function showMessage(projectName) {
-      alert("Details about " + projectName + " will be added soon!");
+    function showMessage() {
+      document.getElementById("msg").innerText = "Hello! Thanks for visiting my portfolio 🌸";
     }
   </script>
+
 </body>
 </html>
