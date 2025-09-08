@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Script.js</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sharumathi B Portfolio</title>
+
+  <style>
+
+    body {
+
+      margin: 0;
+
+      font-family: Arial, sans-serif;
+
+      background-color: red; /* 🔴 full-page red */
+
+      color: #333;
+
+    }
+
+    header {
+
+      background: #222;
+
+      color: #fff;
+
+      padding: 20px;
+
+      text-align: center;
+
+      position: sticky;
+
+      top: 0;
+
+    }
+
+    nav a {
+
+      color: #fff;
+
+      text-decoration: none;
+
+      margin: 0 15px;
+
+      font-weight: bold;
+
+    }
+
+    nav a:hover {
+
+      text-decoration: underline;
+
+    }
+
+    section {
+
+      max-width: 900px;
+
+      margin: 40px auto;
+
+      padding: 20px;
+
+      background: #fff; /* ⚪ readable cards */
+
+      border-radius: 10px;
+
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+    }
+
+    h2 {
+
+      color: #c00; /* dark red headings */
+
+      margin-top: 0;
+
+    }
+
+    footer {
+
+      text-align: center;
+
+      padding: 20px;
+
+      background: #222;
+
+      color: #fff;
+
+      margin-top: 40px;
+
+    }
+
+    /* Smooth scroll */
+
+    html {
+
+      scroll-behavior: smooth;
+
+    }
+
+    /* Responsive */
+
+    @media (max-width: 600px) {
+
+      nav a {
+
+        display: block;
+
+        margin: 10px 0;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+
+    <h1>Sharumathi B</h1>
+
+    <p>BCA Student | MMES Women’s Arts and Science College, Melvisharam</p>
+
+    <nav>
+
+      <a href="#about">About</a>
+
+      <a href="#education">Education</a>
+
+      <a href="#skills">Skills</a>
+
+      <a href="#projects">Projects</a>
+
+      <a href="#hobbies">Hobbies</a>
+
+      <a href="#contact">Contact</a>
+
+    </nav>
+
+  </header>
+
+  <section id="about">
+
+    <h2>About Me</h2>
+
+    <p>Hello! I am <b>Sharumathi B</b>, pursuing <b>Bachelor of Computer Applications (BCA)</b> at 
+
+    <b>MMES Women’s Arts and Science College, Melvisharam</b>.  
+
+    I am passionate about technology, coding, and creating simple yet effective projects using HTML, CSS, and JavaScript.</p>
+
+  </section>
+
+  <section id="education">
+
+    <h2>Education</h2>
+
+    <p>Bachelor of Computer Applications (BCA) – MMES Women’s Arts and Science College</p>
+
+  </section>
+
+  <section id="skills">
+
+    <h2>Skills</h2>
+
+    <ul>
+
+      <li>HTML, CSS, JavaScript</li>
+
+      <li>Web Development</li>
+
+      <li>Problem Solving</li>
+
+    </ul>
+
+  </section>
+
+  <section id="projects">
+
+    <h2>Projects</h2>
+
+    <p>Coming soon... 🚀</p>
+
+  </section>
+
+  <section id="hobbies">
+
+    <h2>Hobbies</h2>
+
+    <ul>
+
+      <li>Coding & Learning</li>
+
+      <li>Designing</li>
+
+      <li>Exploring Technology</li>
+
+    </ul>
+
+  </section>
+
+  <section id="contact">
+
+    <h2>Contact</h2>
+
+    <form id="contactForm">
+
+      <label>Name: <input type="text" id="name" required></label><br><br>
+
+      <label>Email: <input type="email" id="email" required></label><br><br>
+
+      <label>Message:<br><textarea id="message" rows="5" required></textarea></label><br><br>
+
+      <button type="submit">Send</button>
+
+    </form>
+
+    <p id="formStatus"></p>
+
+  </section>
+
+  <footer>
+
+    <p>© 2025 Sharumathi B. All rights reserved.</p>
+
+  </footer>
+
+  <script>
+
+    // Contact form demo (just shows message)
+
+    const form = document.getElementById("contactForm");
+
+    const status = document.getElementById("formStatus");
+
+    form.addEventListener("submit", function(e) {
+
+      e.preventDefault();
+
+      status.textContent = "✅ Thank you! Your message has been sent (demo).";
+
+      form.reset();
+
+    });
+
+  </script>
+
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
